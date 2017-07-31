@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cbdb556-f468-4948-b429-11a194f7ee90" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/default.html" afterPath="$PROJECT_DIR$/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-07-23-跟风学docker.md" afterPath="$PROJECT_DIR$/_posts/2017-07-23-跟风学docker.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -679,7 +679,7 @@
       <workItem from="1500809307266" duration="3365000" />
       <workItem from="1500989667799" duration="250000" />
       <workItem from="1501429815388" duration="2386000" />
-      <workItem from="1501507247496" duration="1394000" />
+      <workItem from="1501507247496" duration="1709000" />
     </task>
     <task id="LOCAL-00001" summary="add：docker初识">
       <created>1500809655439</created>
@@ -741,7 +741,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7395000" />
+    <option name="totallyTimeSpent" value="7710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
