@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cbdb556-f468-4948-b429-11a194f7ee90" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-09-23-关于ArrayList的浅拷贝.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-09-25-简单汇编语言的阅读.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2017-09-12-IDEA启动慢.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-07-23-在docker中配置负载均衡.md" afterPath="$PROJECT_DIR$/_posts/2017-07-23-在docker中配置负载均衡.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-08-06-JDK编译.md" afterPath="$PROJECT_DIR$/_posts/2017-08-06-JDK编译.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-09-23-关于ArrayList的浅拷贝.md" afterPath="$PROJECT_DIR$/_posts/2017-09-23-关于ArrayList的浅拷贝.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-09-25-简单汇编语言的阅读.md" afterPath="$PROJECT_DIR$/_posts/2017-09-25-简单汇编语言的阅读.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-07-23-在docker中配置负载均衡.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="221">
+              <first_editor relative-caret-position="306">
                 <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -198,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,6 +293,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
@@ -742,7 +739,8 @@
       <workItem from="1501429815388" duration="2386000" />
       <workItem from="1501507247496" duration="2799000" />
       <workItem from="1511511953990" duration="79000" />
-      <workItem from="1511590225741" duration="18000" />
+      <workItem from="1511590225741" duration="284000" />
+      <workItem from="1511624896535" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="add：docker初识">
       <created>1500809655439</created>
@@ -814,11 +812,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501513856171</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="博客内容修改">
+      <created>1511590255759</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1511590255759</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8897000" />
+    <option name="totallyTimeSpent" value="9174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="6" />
@@ -837,7 +842,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27382874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -865,7 +870,8 @@
     <MESSAGE value="add：新加博客" />
     <MESSAGE value="add：cs" />
     <MESSAGE value="样式更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="样式更新" />
+    <MESSAGE value="博客内容修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="博客内容修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1097,7 +1103,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-07-23-在docker中配置负载均衡.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="221">
+          <first_editor relative-caret-position="306">
             <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
             <folding />
           </first_editor>
