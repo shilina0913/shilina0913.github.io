@@ -1,0 +1,104 @@
+单例模式总结
+
+1. 懒汉式，线程不安全
+
+---
+
+    private static Singleton singleton;
+
+    private Singleton() {
+    }
+
+    public static Singleton getInstance() {
+        if (singleton == null) {
+            singleton = new Singleton();
+        }
+        return singleton;
+    }
+2.懒汉式，线程安全
+
+---
+
+    private static Singleton singleton;
+
+    private Singleton() {
+    }
+
+    public synchronized static Singleton getInstance() {
+        if (singleton == null) {
+            singleton = new Singleton();
+        }
+        return singleton;
+    }
+    
+这种方式下，每次调用getInstance时，都只有一个线程可以操作，但是这里的同步只需在一开始的时候需要，因而性能不高，故而引入双重检验锁。
+    
+3.双重检验锁
+
+---
+    private static Singleton singleton;
+
+    private Singleton() {
+    }
+
+    public static Singleton getInstance() {
+        if (singleton == null) {
+            synchronized (Singleton.class) {
+                if (singleton == null) {
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    singleton = new Singleton();
+                }
+            }
+        }
+        return singleton;
+    }
+然而这有一个问题，singleton = new Singleton()，设计三个步骤，
+
+1. 给singleton分配内存；
+2. Singleton初始化；
+3. 将singleton对象的引用指向新创建的对象
+
+由于JVM虚拟机指令重排序的问题，故而2与3可能会互调，使得该同步方法有问题（我自己测了下，并未出现这个问题），所以需要将singleton用volatile进行修饰，从而禁止指令重排序
+
+4.饿汉式
+
+    private static final Singleton singleton = new Singleton();
+
+    private Singleton() {
+    }
+
+    public static Singleton getInstance() {
+        return singleton;
+    }
+缺点是有时可能不需要用到这个对象，对象却在类加载时已经被创建，增加不必要的堆内存，也可能导致类加载速度变慢。
+
+5.静态内部类
+
+    private static class SingletonHolder {
+        private static final Singleton singleton = new Singleton();
+    }
+
+    private Singleton() {
+    }
+
+    public static Singleton getInstance() {
+        return SingletonHolder.singleton;
+    }
+当调用getInstance()方法时，内部类才会被加载，这个时候Singleton单例对象被创建，很机智的写法啊。
+
+6.枚举类
+
+---
+    public enum Singleton{
+    		INSTANCE;
+    }
+很简单的一种写法，而且也能避免反序列化时重新创建对象的问题。
+
+
+
+
+
